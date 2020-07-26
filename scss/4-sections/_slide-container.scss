@@ -1,0 +1,50 @@
+.slide-container {
+  position: relative;
+  .prev {
+    position: absolute;
+    left: 5rem;
+    top: 50%;
+    padding: 10px;
+    background-color: $lightBlue;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .next {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    padding: 10px;
+    background-color: $lightBlue;
+  }
+  &:hover {
+    .prev,
+    .next {
+      opacity: 1;
+      @include for-phone-only {
+        opacity: 0;
+      }
+    }
+  }
+  &__section {
+    position: relative;
+    &__text {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+      h1 {
+        @include for-phone-only {
+          font-size: 2rem;
+          max-width: 200px;
+        }
+        @include for-tablet-portrait-up {
+          left: 10%;
+          top: 30%;
+        }
+      }
+    }
+  }
+}

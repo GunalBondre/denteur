@@ -1,0 +1,43 @@
+.services {
+  &__details {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: $lightBlue;
+    &:nth-child(odd) {
+      background-color: $darkBlue;
+    }
+    img {
+      width: 100px;
+      max-width: 100px;
+      padding: 20px;
+      background-color: $white;
+    }
+    @include for-phone-only {
+      width: 90% !important;
+      margin: 0 auto;
+    }
+  }
+
+  .row {
+    @include for-desktop-up {
+      margin-top: -10%;
+    }
+  }
+}
+
+// caring for your smile style section
+
+.signature {
+  max-width: 250px;
+  width: 200px;
+}
+.top-heading-small-text {
+  color: $darkBlue;
+  font-weight: 700;
+}
+.left__header-wrapper {
+  border-left: 6px solid;
+  color: $darkBlue;
+  padding-left: 10px;
+}

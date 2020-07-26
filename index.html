@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denteur - Dental clinic</title>
     <link rel="stylesheet" href="./scss/main.css" />
-    <script src="./js/main.js"></script>
     <!-- bootstrap and othe cdn import section start -->
     <link
       rel="stylesheet"
@@ -19,7 +18,17 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -35,23 +44,269 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
+
     <!-- slick slider stylesheet -->
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
     <!-- slick slider stylesheet ends -->
     <!-- bootstrap and othe cdn import section end -->
   </head>
   <body>
+    <!-- navbar section starts -->
+
+    <section class="navbar-section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          ><img src="./images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link" href="#">About Us</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- navbar section ends -->
+
+    <!-- main slider section starts -->
+
+    <div class="slide-container">
+      <div class="slide-one">
+        <div class="slide-container__section">
+          <picture>
+            <source media="(min-width:599px )" srcset="./images/slider1.jpg" />
+            <img src="./images/slider1-small.jpg" class="img-fluid" alt="" />
+          </picture>
+
+          <div class="slide-container__section__text">
+            <h1>For a good <strong>oral health</strong></h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+              doloremque autem quo. Doloremque earum cupiditate et repudiandae
+            </p>
+            <button class="learn-more my-3">LEARN MORE</button>
+          </div>
+        </div>
+        <div class="slide-container__image">
+          <img src="./images/slider2.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="slide-container__image">
+          <img src="./images/slider3.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="slide-buttons">
+        <div class="prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="next"><i class="fas fa-chevron-right"></i></div>
+      </div>
+    </div>
+
+    <!-- main slider section ends -->
+
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 my-2 services__details">
+            <img src="./images/dental.svg" class="img-fluid" alt="" />
+            <div class="services__content">
+              <h4>Consultation</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus mollitia odit maxime esse iusto totam nemo excepturi
+                eum modi suscipit debitis veritatis facere incidunt, quasi
+                dolorum, vel quisquam rerum ab.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 my-2 services__details">
+            <img src="./images/dentist.svg" class="img-fluid r" alt="" />
+            <div class="services__content">
+              <h4>Modern Equipment</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 my-2 services__details">
+            <img src="./images/tooth-saved.svg" class="img-fluid" alt="" />
+            <div class="services__content">
+              <h4>Emergency Service</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus mollitia odit maxime esse iusto totam nemo excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 my-2 services__details">
+            <img src="./images/implant.svg" class="img-fluid" alt="" />
+            <div class="services__content">
+              <h4>Quality Staff</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus mollitia odit maxime esse iusto totam nemo excepturi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section services ends -->
+    <!-- caring for ur smile --- style written in services.scss -->
+    <section class="caring-for-your-smile">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-6 col-sm-12 left">
+            <div class="left__header-wrapper">
+              <p class="top-heading-small-text">
+                FOR THE LIFE OF YOUR SMILE
+              </p>
+              <h2>Caring For Your Smile</h2>
+            </div>
+            <p class="text-muted">
+              The results are part of National Smile Month, a nationwide health
+              campaign that promotes the benefits of a healthy smile.
+            </p>
+            <p>
+              Promotes unrealistic expectations of what a healthy smile looks
+              like and it is clearly having a negative effect on how confident
+              we are when it comes to showing ours off. A smile represents
+              feelings of happiness and joy. This is something to be cherished.
+            </p>
+            <img
+              src="./images/signature.png"
+              class="img-fluid signature"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6 col-sm-12 right order-xs-2">
+            <img src="./images/img13.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our services section starts -->
+    <section class="our-services">
+      <div class="our-services__wrapper">
+        <div class="our-services__header">
+          <h2 class="text-center">Our Services</h2>
+          <hr />
+          <p class="text-muted text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            sapiente perspiciatis laborum molestias ducimus est, exercitationem
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-sm-12 our-services__container">
+            <img
+              src="./images/dentist-w.svg"
+              class="img-fluid our-services__icon"
+              alt=""
+            />
+            <h3 class="my-4">Prosthodentist</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              libero unde dolores, ut doloribus cumque quo debitis praesentium
+              fuga minima.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+          <div class="col-md-3 col-sm-12 our-services__container">
+            <img
+              src="./images/dentist-w.svg"
+              class="img-fluid our-services__icon"
+              alt=""
+            />
+            <h3 class="my-4">Prosthodentist</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              libero unde dolores, ut doloribus cumque quo debitis praesentium
+              fuga minima.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+          <div class="col-md-3 col-sm-12 our-services__container">
+            <img
+              src="./images/dentist-w.svg"
+              class="img-fluid our-services__icon"
+              alt=""
+            />
+            <h3 class="my-4">Prosthodentist</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              libero unde dolores, ut doloribus cumque quo debitis praesentium
+              fuga minima.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+          <div class="col-md-3 col-sm-12 our-services__container">
+            <img
+              src="./images/dentist-w.svg"
+              class="img-fluid our-services__icon"
+              alt=""
+            />
+            <h3 class="my-4">Prosthodentist</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              libero unde dolores, ut doloribus cumque quo debitis praesentium
+              fuga minima.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+          <div class="col-md-3 col-sm-12 our-services__container">
+            <img
+              src="./images/dentist-w.svg"
+              class="img-fluid our-services__icon"
+              alt=""
+            />
+            <h3 class="my-4">Prosthodentist</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              libero unde dolores, ut doloribus cumque quo debitis praesentium
+              fuga minima.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+          <div class="col-md-3 col-sm-12 our-services__container">
+            <img
+              src="./images/dentist-w.svg"
+              class="img-fluid our-services__icon"
+              alt=""
+            />
+            <h3 class="my-4">Prosthodentist</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              libero unde dolores, ut doloribus cumque quo debitis praesentium
+              fuga minima.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our services section ends -->
+
+    <!-- Our team section starts -->
+
+    <!-- Our team section ends -->
+
     <!-- scripts for slick slider -->
 
     <script
